@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="students.xsl" type="text/xsl"?>
+
+<students>
+  <!--An Student Catalog-->
+  <student sn="01">
+    <name>sam</name>
+    <age>18</age>
+  </student>
+  <student sn="02">
+    <name>lin</name>
+    <age>20</age>
+  </student>
+  <student sn="03">
+    <name>Huang</name>
+    <age>22</age>
+  </student>
+</students>
