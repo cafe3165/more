@@ -68,7 +68,7 @@ public class XmlGen {
        Element NameElement2 = StuElement2.addElement("name");
        NameElement2.setText("Huang");
        Element AgeElement2 = StuElement2.addElement("age");
-       AgeElement2.setText("22");
+       AgeElement2.setText("23");
        
        
        
