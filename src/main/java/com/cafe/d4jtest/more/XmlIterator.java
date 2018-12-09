@@ -22,7 +22,7 @@ public class XmlIterator {
     }
 
     public static void main(String[] argv) {
-        XmlIterator dom4jParser = new XmlIterator(new File("students-gen.xml"));
+        XmlIterator dom4jParser = new XmlIterator(new File("devices-gen.xml"));
         dom4jParser.traversalDocumentByIterator();
      }
     
@@ -46,6 +46,9 @@ public class XmlIterator {
     /*
      * 该方法只是枚举了两层，如果一直挖的话要用递归方法
      */
+    /**
+     * 
+     */
     public void traversalDocumentByIterator() {
         Element root = getRootElement();
         // 枚举根节点下所有子节点
@@ -60,16 +63,47 @@ public class XmlIterator {
                System.out.println(attribute.getName() + ":"
                       + attribute.getData());
             }
+//             枚举当前节点下所有子节点
+//            for (Iterator ieson = element.elementIterator(); ieson.hasNext();) {
+//               Element elementSon = (Element) ieson.next();
+//               System.out.println(elementSon.getName() + ":"+ elementSon.getText());
+//            }
             
-            // 枚举当前节点下所有子节点
             for (Iterator ieson = element.elementIterator(); ieson.hasNext();) {
-               Element elementSon = (Element) ieson.next();
-               System.out.println(elementSon.getName() + ":"+ elementSon.getText());
-            }
+            	
+            	
+                Element elementSon = (Element) ieson.next();
+                if(elementSon.getName()!="Functions")
+                	System.out.println(elementSon.getName() + ":"+ elementSon.getText());
+                else {
+                	for(Iterator ifun = elementSon.elementIterator(); ifun.hasNext();) {
+                		Element efun=(Element)ifun.next();
+                		System.out.println(efun.getName());
+                		
+                		for (Iterator ifuna = efun.attributeIterator(); ifuna.hasNext();) {
+                            Attribute funattribute = (Attribute) ifuna.next();
+                            System.out.println(funattribute.getName() + ":"
+                                   + funattribute.getData());
+                         }
+                		
+                		 for (Iterator ifunson = efun.elementIterator(); ifunson.hasNext();) {
+                			 
+                			 Element efunSon = (Element) ifunson.next();
+                             if(efunSon.getName()!="Functions")
+                             	System.out.println(efunSon.getName() + ":"+ efunSon.getText());
+                		 }
+                		 
+                		
+                		
+                	}
+
+                	
+                }
+             }
+            
         }
      }
     
-    
-    
+      
     
 }
