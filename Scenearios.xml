@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="students.xsl" type="text/xsl"?>
+
+<Devices>
+  <!--An Student Catalog-->
+
+  <device dn="01">
+    <Dname>Air-Condition</Dname>
+    <LName>Bedroom</LName>
+    <CType>Temperature</CType>
+
+    	<Funtions>
+	  <Funtion fn="1">
+		<Fname>Increse</Fname>
+	  </Funtion>	
+	  <Funtion fn="2">
+		<Fname>Reduce</Fname>
+	  </Funtion>	
+	  <Funtion fn="3">
+		<Fname>Assign</Fname>
+	  </Funtion>	
+	  <Funtion fn="4">
+		<Fname>Monitor</Fname>
+	  </Funtion>	
+    	</Funtions>
+  </device>
+
+  <device dn="02">
+    <Dname>Smart-Light</Dname>
+    <LName>Sitting-room</LName>
+    <CType>Brightness</CType>
+    <Funtions>
+	  <Funtion fn="1">
+		<Fname>Increse</Fname>
+	  </Funtion>	
+	  <Funtion fn="2">
+		<Fname>Reduce</Fname>
+	  </Funtion>	
+	  <Funtion fn="3">
+		<Fname>Monitor</Fname>
+	  </Funtion>	
+    </Funtions>
+
+  </device>
+
+  <device dn="03">
+    <Dname>Smart-Water-Pump</Dname>
+    <LName>Balcony</LName>
+    <CType>Humidty</CType>
+    <Funtions>
+	  <Funtion fn="1">
+		<Fname>Increse</Fname>
+	  </Funtion>	
+    </Funtions>
+
+  </device>
+
+
+</Devices>
+
+
+

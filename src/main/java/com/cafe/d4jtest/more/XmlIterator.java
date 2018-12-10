@@ -76,16 +76,18 @@ public class XmlIterator {
                 if(elementSon.getName()!="Functions")
                 	System.out.println(elementSon.getName() + ":"+ elementSon.getText());
                 else {
+                	//如果是Funtions的话，就以Funtions为根节点，迭代遍历其下的各个Funtion
                 	for(Iterator ifun = elementSon.elementIterator(); ifun.hasNext();) {
                 		Element efun=(Element)ifun.next();
                 		System.out.println(efun.getName());
                 		
+                		//遍历Function属性值 如 fn:1
                 		for (Iterator ifuna = efun.attributeIterator(); ifuna.hasNext();) {
                             Attribute funattribute = (Attribute) ifuna.next();
                             System.out.println(funattribute.getName() + ":"
                                    + funattribute.getData());
                          }
-                		
+                		//遍历Funtion下的各个功能 如 Fname:Increse
                 		 for (Iterator ifunson = efun.elementIterator(); ifunson.hasNext();) {
                 			 
                 			 Element efunSon = (Element) ifunson.next();
