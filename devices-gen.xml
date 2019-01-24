@@ -2,50 +2,50 @@
 <?xml-stylesheet href="devices.xsl" type="text/xsl"?>
 
 <Devices>
-  <!--An Devices Catalog-->
-  <Device Dno="01">
-    <DName>Air-Condition</DName>
-    <LName>Bedroom</LName>
-    <CTpye>Temperature</CTpye>
-    <Functions>
-      <Funtion fn="1">
-        <Fname>Increse</Fname>
-      </Funtion>
-      <Funtion fn="2">
-        <Fname>Reduce</Fname>
-      </Funtion>
-      <Funtion fn="3">
-        <Fname>Assign</Fname>
-      </Funtion>
-      <Funtion fn="4">
-        <Fname>Monitor</Fname>
-      </Funtion>
-    </Functions>
-  </Device>
-  <Device Dno="02">
-    <DName>Smart-Light</DName>
-    <LName>Sitting-room</LName>
-    <CTpye>Brightness</CTpye>
-    <Functions>
-      <Funtion fn="1">
-        <Fname>Increse</Fname>
-      </Funtion>
-      <Funtion fn="2">
-        <Fname>Reduce</Fname>
-      </Funtion>
-      <Funtion fn="3">
-        <Fname>Monitor</Fname>
-      </Funtion>
-    </Functions>
-  </Device>
-  <Device Dno="03">
-    <DName>Smart-Water-Pump</DName>
-    <LName>Balcony</LName>
-    <CTpye>Humidty</CTpye>
-    <Functions>
-      <Funtion fn="1">
-        <Fname>Increse</Fname>
-      </Funtion>
-    </Functions>
-  </Device>
+	<!--An Devices Catalog -->
+	<Device Dno="01">
+		<DName>Air-Condition</DName>
+		<LName>Bedroom</LName>
+		<CTpye>Temperature</CTpye>
+		<Functions>
+			<Funtion fn="1">
+				<Fname>Increse</Fname>
+			</Funtion>
+			<Funtion fn="2">
+				<Fname>Reduce</Fname>
+			</Funtion>
+			<Funtion fn="3">
+				<Fname>Assign</Fname>
+			</Funtion>
+			<Funtion fn="4">
+				<Fname>Monitor</Fname>
+			</Funtion>
+		</Functions>
+	</Device>
+	<Device Dno="02">
+		<DName>Smart-Light</DName>
+		<LName>Sitting-room</LName>
+		<CTpye>Brightness</CTpye>
+		<Functions>
+			<Funtion fn="1">
+				<Fname>Increse</Fname>
+			</Funtion>
+			<Funtion fn="2">
+				<Fname>Reduce</Fname>
+			</Funtion>
+			<Funtion fn="3">
+				<Fname>Monitor</Fname>
+			</Funtion>
+		</Functions>
+	</Device>
+	<Device Dno="03">
+		<DName>Smart-Water-Pump</DName>
+		<LName>Balcony</LName>
+		<CTpye>Humidty</CTpye>
+		<Functions>
+			<Funtion fn="1">
+				<Fname>Increse</Fname>
+			</Funtion>
+		</Functions>
+	</Device>
 </Devices>
