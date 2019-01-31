@@ -22,7 +22,7 @@ public class XmlIterator {
     }
 
     public static void main(String[] argv) {
-        XmlIterator dom4jParser = new XmlIterator(new File("devices-gen.xml"));
+        XmlIterator dom4jParser = new XmlIterator(new File("Context.xml"));
         dom4jParser.traversalDocumentByIterator();
      }
     
